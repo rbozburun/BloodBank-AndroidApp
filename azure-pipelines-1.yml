@@ -18,6 +18,7 @@ steps:
     scaVerbose: true
     scaDebug: true
     fortifyScanType: 'ScanCentralScan'
+    scanCentralFortifyServerName: 'SSC'
     scanCentralRunFortifyUpload: true
     scanCentralFortifyApplicationIdentifierType: 'byId'
     scanCentralFortifyApplicationVersionId: '10018'
