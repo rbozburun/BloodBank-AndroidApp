@@ -17,8 +17,9 @@ steps:
     fortifyBuildId: 'gradle_sca_as'
     scaVerbose: true
     scaDebug: true
-    fortifyScanType: 'LocalScan'
-    runFortifyUpload: true
-    fortifyServerName: 'SSC'
-    fortifyApplicationIdentifierType: 'byId'
-    fortifyApplicationVersionId: '10018'
+    fortifyScanType: 'ScanCentralScan'
+    scanCentralRunFortifyUpload: true
+    scanCentralFortifyApplicationIdentifierType: 'byId'
+    scanCentralFortifyApplicationVersionId: '10018'
+    fortifyBuildFailureCriteria: '[fortify priority order]:critical'
+    taskResultForBuildFailureCriteria: 'FAIL'
