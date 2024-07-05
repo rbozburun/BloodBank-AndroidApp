@@ -14,6 +14,7 @@ steps:
 - task: FortifySCA@7
   inputs:
     applicationType: 'other'
+    buildToolOptions: 'gradle clean build'
     fortifyBuildId: 'gradle_sca_as'
     scaVerbose: true
     scaDebug: true
